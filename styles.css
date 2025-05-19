@@ -1,0 +1,277 @@
+html,body{
+    margin: 0;
+    padding: 5px;
+    background-color: black;
+    height: 100%;
+    color: white
+}
+body{
+    min-height: 380vh; /*profundidad lu cual puede llegar el sticky*/
+}
+.centro {
+    display: flex;
+    justify-content: center;
+}
+
+.intro {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: black;
+    color: white;
+   
+}
+
+.texto {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+    color: white;
+}
+
+.t-pre {
+    font-size: 23px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fondo{
+    margin: 0;
+    padding: 0;
+}
+
+#carruselvj {
+    max-width: 900px;
+    margin: 0 auto;  
+  }
+#carruseldeportes{
+    max-width: 900px;
+    margin: 0 auto;   
+}
+h1 {
+    font-family: "mi fuente", sans-serif;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: "mi fuente", sans-serif;
+}
+
+footer {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    font-family: "otra fuente", sans-serif;
+    margin: 20px 0;
+    padding: 10px;
+    
+}
+
+.t-articulo {
+    font-size: 30px;
+    text-align: center;
+}
+
+.fuente-t {
+    font-family: "mi fuente", sans-serif;
+}
+.carucel-t{
+    font-size: 18px;
+}
+
+.Shadow {
+    text-shadow: rgba(190, 209, 200, 0.993) 6px 0;
+    color: rgb(11, 72, 122);
+}
+
+#titulo {
+    display: inline-flex;
+    justify-content: left;
+    text-shadow: grey 5px 0;
+    color: rgba(40, 9, 216, 0.993);
+    background-color: black;
+    padding: 0;
+    margin: 10px;
+    scroll-margin-top: 2000px; /*cuando halla un elemento dentro de sticky para volver al inicio*/
+    transition: font-size 0.3s ease, padding 0.3s ease;
+}
+#titulo a:link{
+    text-shadow: grey 5px 0;
+    color: rgba(40, 9, 216, 0.993);
+ 
+}
+.shrink-shadow {
+    text-shadow: grey 1px 0; 
+}
+
+.move {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;              
+    padding: 10px 20px;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 1000;
+    }
+    .move.unstuck {
+        position: relative;
+          opacity: 0;
+          transform: translateY(-100%);
+          pointer-events: none;
+    }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    font-family: "mi fuente";
+    background-color: rgb(191, 243, 243);
+    color:black;
+}
+
+nav{
+    transition: padding 0.3s ease;
+}
+.menu-nav {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-color: solid white;
+  }
+  
+  .menu-nav li a {
+    font-family: "mi fuente";
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu-nav li a:hover {
+    background-color: white;
+    color: black;
+    text-shadow: grey 3px 0;
+  }
+
+
+main{
+    margin-top: 50px;
+}
+
+.i{
+    margin: 0px;
+} 
+ul{
+    margin: 0;
+}
+.play{
+    background-color: rgb(21, 21, 241);
+}
+.N{
+    background-color: rgb(233, 29, 29);
+}
+.Xbox{
+    background-color: rgb(30, 173, 30);
+}
+#oro{
+    background-color: gold;
+}
+#plata{
+    background-color: silver;
+}
+#bronce{
+    background-color: rgb(205, 127, 50);
+}
+
+a:link {
+    color: white;
+}
+nav a:visited{
+        color: gold
+}
+  
+a:hover{
+    background-color: black;
+    text-shadow: grey 2px 0;
+}
+a{
+    text-decoration: none;
+}
+a:active{
+    color: inherit; /*para que que del mismo color al mantener el click*/
+}
+aside {
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+  
+  aside h2 {
+    margin-bottom: 20px;
+  }
+  
+  aside div {
+    display: inline-block;
+    width: 250px;
+    margin: 5px;
+    background-color: #333;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+  aside a:link {
+    color: white;
+    text-decoration: none;
+}
+  aside a:visited{
+    color: white;
+  }
+  aside a:hover{
+    background-color: #333;
+    color: white;
+    text-shadow: grey 3px 0;
+  }  
+  
+.tamano{
+    width: 200px;
+}
+.custom-arrow {
+    font-size: 2.5rem;
+    color: white;
+    transition: transform 0.2s ease;
+  }
+  
+  .custom-arrow:hover {
+    transform: scale(1.1);
+  }
+  
+
+@font-face {
+    font-family: "mi fuente";
+    src: url(archivos/BrunoAceSC-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "otra fuente";
+    src: url(archivos/Silkscreen-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    }
